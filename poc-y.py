@@ -4,7 +4,8 @@ author Recar
 """
 from lib.controller import controller
 from lib.parser import parser
-
+from config.config import BANNER
+print(BANNER)
 
 def main():
     (options,args) = parser.get_options()

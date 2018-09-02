@@ -10,7 +10,8 @@ def get_poc_path():
         path = path.replace("\\","\\\\")
     return path
 
-def get_poc_all(path):
+def get_poc_all():
+    path = get_poc_path()
     poc_all = []
     files=[]
     for root, dirs, file in os.walk(path):
